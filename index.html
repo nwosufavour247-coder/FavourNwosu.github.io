@@ -2,303 +2,567 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Favour Nwosu | Cybersecurity Specialist</title>
-<meta name="description" content="Favour Nwosu - Cybersecurity Specialist focused on penetration testing, information security, risk management and network security.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Favour Nwosu - Cybersecurity Specialist, Information Security and Risk Management Professional.">
+  <title>Favour Nwosu | Cybersecurity Specialist</title>
 
-<style>
-:root {
-  --bg: #07111f;
-  --panel: #101e30;
-  --blue: #24a8ff;
-  --text: #f2f7ff;
-  --muted: #a9b8ca;
-}
-* { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
-body {
-  font-family: Arial, sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  line-height: 1.7;
-}
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 8%;
-  background: #091626;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  border-bottom: 1px solid #20344c;
-}
-.logo { color: var(--blue); font-size: 22px; font-weight: bold; }
-nav { display: flex; gap: 20px; flex-wrap: wrap; }
-nav a {
-  color: var(--text);
-  text-decoration: none;
-  font-size: 14px;
-}
-nav a:hover { color: var(--blue); }
-section { padding: 75px 9%; }
-.hero {
-  min-height: 78vh;
-  display: flex;
-  align-items: center;
-  background: radial-gradient(circle at 85% 30%, #12375a, transparent 38%);
-}
-.hero-content { max-width: 760px; }
-.eyebrow { color: var(--blue); letter-spacing: 3px; font-size: 13px; }
-h1 { font-size: clamp(38px, 7vw, 66px); line-height: 1.15; margin: 18px 0; }
-h1 span, h2 span { color: var(--blue); }
-.hero p, .intro { color: var(--muted); max-width: 700px; }
-.btn {
-  display: inline-block;
-  margin: 25px 12px 0 0;
-  padding: 12px 23px;
-  border-radius: 5px;
-  background: var(--blue);
-  color: #061321;
-  font-weight: bold;
-  text-decoration: none;
-}
-.btn.secondary {
-  background: transparent;
-  border: 1px solid var(--blue);
-  color: var(--blue);
-}
-h2 { font-size: 32px; margin-bottom: 20px; }
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  margin-top: 30px;
-}
-.card {
-  background: var(--panel);
-  padding: 25px;
-  border: 1px solid #203650;
-  border-radius: 10px;
-}
-.card h3 { color: var(--blue); margin-bottom: 10px; }
-.card p, li { color: var(--muted); }
-.card ul { padding-left: 20px; }
-.tag {
-  display: inline-block;
-  margin: 5px;
-  padding: 7px 12px;
-  border: 1px solid #245078;
-  border-radius: 20px;
-  color: #b9ddff;
-  font-size: 13px;
-}
-#about, #projects, #education { background: #0a1727; }
-.contact-box {
-  background: var(--panel);
-  padding: 30px;
-  border-radius: 10px;
-  border: 1px solid #203650;
-}
-footer {
-  text-align: center;
-  padding: 25px;
-  color: var(--muted);
-  border-top: 1px solid #20344c;
-}
-@media(max-width:650px) {
-  header { flex-direction: column; gap: 12px; }
-  nav { justify-content: center; gap: 12px; }
-  nav a { font-size: 12px; }
-  section { padding: 55px 7%; }
-}
-</style>
+  <style>
+    :root {
+      --background: #07111f;
+      --surface: #101f33;
+      --blue: #168cff;
+      --light-blue: #65b5ff;
+      --white: #f4f8ff;
+      --muted: #b4c2d4;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: var(--background);
+      color: var(--white);
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--light-blue);
+      text-decoration: none;
+    }
+
+    header {
+      background: #0b192b;
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid #1d3552;
+    }
+
+    .logo {
+      font-size: 19px;
+      font-weight: bold;
+      color: var(--light-blue);
+      letter-spacing: 1px;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    nav a {
+      color: var(--white);
+      font-size: 13px;
+    }
+
+    nav a:hover {
+      color: var(--light-blue);
+    }
+
+    section {
+      padding: 75px 8%;
+      scroll-margin-top: 85px;
+    }
+
+    .hero {
+      min-height: 78vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      background: linear-gradient(120deg, #07111f, #102b4b);
+    }
+
+    .hero h1 {
+      font-size: clamp(36px, 7vw, 58px);
+      line-height: 1.2;
+      margin: 12px 0;
+    }
+
+    .hero h1 span {
+      color: var(--blue);
+    }
+
+    .hero p {
+      max-width: 650px;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .eyebrow {
+      color: var(--light-blue);
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-size: 13px;
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--blue);
+      color: white;
+      padding: 12px 23px;
+      border-radius: 5px;
+      margin-top: 25px;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background: #0874d5;
+    }
+
+    h2 {
+      color: var(--light-blue);
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    .intro {
+      max-width: 850px;
+      color: var(--muted);
+    }
+
+    .section-dark {
+      background: #0b192b;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      margin-top: 28px;
+    }
+
+    .card {
+      background: var(--surface);
+      padding: 23px;
+      border-radius: 9px;
+      border: 1px solid #203a58;
+    }
+
+    .card h3 {
+      color: var(--light-blue);
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #173a60;
+      color: #9bd0ff;
+      padding: 4px 9px;
+      border-radius: 4px;
+      font-size: 11px;
+      margin: 12px 4px 0 0;
+    }
+
+    .experience-label {
+      color: #65b5ff;
+      font-size: 11px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+
+    .contact-links {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #050c16;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        justify-content: center;
+      }
+
+      nav {
+        justify-content: center;
+        gap: 12px;
+      }
+
+      section {
+        padding: 55px 6%;
+      }
+
+      .hero {
+        min-height: 70vh;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-  <div class="logo">FN.</div>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#education">Education</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+  <header>
+    <div class="logo">FAVOUR NWOSU</div>
 
-<section class="hero" id="home">
-  <div class="hero-content">
-    <p class="eyebrow">CYBERSECURITY • INFORMATION SECURITY • RISK MANAGEMENT</p>
-    <h1>Securing Systems.<br>Protecting <span>Digital Assets.</span></h1>
-    <h2 style="font-size:25px;">I'm Favour Nwosu</h2>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <p class="eyebrow">Welcome to my professional portfolio</p>
+    <h1>Favour Nwosu</h1>
+    <h1><span>Cybersecurity Specialist</span></h1>
+
     <p>
-      Cybersecurity Specialist focused on identifying vulnerabilities,
-      strengthening security controls, managing information security risks
-      and helping organisations protect their digital environments.
+      Passionate about protecting digital environments through
+      information security, vulnerability assessment, risk management,
+      security monitoring and data protection.
     </p>
-    <a href="#projects" class="btn">Explore My Projects</a>
-    <a href="#contact" class="btn secondary">Get In Touch</a>
-  </div>
-</section>
 
-<section id="about">
-  <h2>About <span>Me</span></h2>
-  <p class="intro">
-    Organisations face increasing cybersecurity challenges, from
-    unauthorised access and data breaches to system vulnerabilities
-    and security misconfigurations.
-    <br><br>
-    I am Favour Nwosu, a cybersecurity professional passionate about
-    helping organisations understand, assess and improve their security
-    posture. My interests span penetration testing, information security,
-    risk management, governance, risk and compliance (GRC), and network
-    security.
-    <br><br>
-    I approach cybersecurity with a commitment to continuous learning,
-    practical problem-solving and responsible security practices.
-    My goal is to contribute to safer digital environments through
-    effective security assessment and risk reduction.
-  </p>
-</section>
+    <a href="#projects" class="button">Explore My Projects</a>
+  </section>
 
-<section id="skills">
-  <h2>My Technical <span>Skills</span></h2>
-  <div class="grid">
-    <div class="card">
-      <h3>Penetration Testing</h3>
-      <p>Security testing, reconnaissance and identifying system vulnerabilities.</p>
-    </div>
-    <div class="card">
-      <h3>Vulnerability Assessment</h3>
-      <p>Identifying, analysing and documenting security weaknesses.</p>
-    </div>
-    <div class="card">
-      <h3>SIEM & Monitoring</h3>
-      <p>Security event monitoring, log analysis and threat detection using Wazuh and Splunk.</p>
-    </div>
-    <div class="card">
-      <h3>Risk Management & GRC</h3>
-      <p>Risk assessment, security policies, compliance and security controls.</p>
-    </div>
-    <div class="card">
-      <h3>Network Security</h3>
-      <p>Network monitoring, security configurations and threat awareness.</p>
-    </div>
-    <div class="card">
-      <h3>Information Security</h3>
-      <p>Data protection, incident response and security awareness.</p>
-    </div>
-  </div>
+  <section id="about">
+    <h2>About Me</h2>
 
-  <h3 style="margin-top:35px;">Tools & Technologies</h3>
-  <div style="margin-top:15px;">
-    <span class="tag">Linux</span>
-    <span class="tag">Ubuntu</span>
-    <span class="tag">Kali Linux</span>
-    <span class="tag">Termux</span>
-    <span class="tag">Wazuh</span>
-    <span class="tag">Splunk</span>
-    <span class="tag">Zenmap</span>
-    <span class="tag">Windows Event Viewer</span>
-    <span class="tag">Microsoft Excel</span>
-  </div>
-</section>
+    <p class="intro">
+      In today's digital environment, organisations face growing threats
+      to their networks, systems and sensitive information. Effective
+      cybersecurity practices are essential for protecting digital assets,
+      maintaining business continuity and building trust.
 
-<section id="projects">
-  <h2>Practical <span>Projects</span></h2>
-  <div class="grid">
-    <div class="card">
-      <h3>Knightlead Solutions Risk Assessment</h3>
-      <p>
-        Conducted cybersecurity risk assessment work, identifying
-        information security risks and proposing recommendations
-        and security policies to improve organisational protection.
-      </p>
-    </div>
-    <div class="card">
-      <h3>AbaCraft Vulnerability Assessment</h3>
-      <p>
-        Worked on a security assessment of a digital marketplace,
-        focusing on application security, identity verification,
-        data protection and security controls.
-      </p>
-    </div>
-    <div class="card">
-      <h3>Abia State GRC Framework Proposal</h3>
-      <p>
-        Developed a governance, risk and compliance framework proposal
-        addressing information security governance, risk management
-        and organisational security policies.
-      </p>
-    </div>
-    <div class="card">
-      <h3>Security Monitoring with Wazuh</h3>
-      <p>
-        Practised endpoint monitoring and security event investigation,
-        focusing on indicators of compromise, suspicious activities
-        and potential lateral movement.
-      </p>
-    </div>
-    <div class="card">
-      <h3>SIEM Monitoring with Splunk</h3>
-      <p>
-        Worked on security log analysis, failed login detection,
-        suspicious file access monitoring and alert configuration.
-      </p>
-    </div>
-  </div>
-</section>
+      <br><br>
 
-<section id="education">
-  <h2>Education & <span>Certifications</span></h2>
-  <div class="grid">
-    <div class="card">
-      <h3>Alex Ekwueme Federal University</h3>
-      <p>B.Sc. Criminology and Security Studies</p>
-    </div>
-    <div class="card">
-      <h3>QurateHQ</h3>
-      <p>Cybersecurity Training</p>
-    </div>
-    <div class="card">
-      <h3>Techeccentric</h3>
-      <p>Cybersecurity Training</p>
-    </div>
-    <div class="card">
-      <h3>Evolve Mentorship Academy</h3>
-      <p>Certified Leadership Training</p>
-    </div>
-    <div class="card">
-      <h3>Fled Organization</h3>
-      <p>Leadership Certificate</p>
-    </div>
-  </div>
-</section>
+      I am Favour Nwosu, a cybersecurity enthusiast and information
+      security professional with an interest in helping organisations
+      identify vulnerabilities, manage security risks and strengthen
+      their digital environments.
 
-<section id="contact">
-  <h2>Let's <span>Connect</span></h2>
-  <div class="contact-box">
-    <p>
-      Interested in cybersecurity, collaboration, professional
-      opportunities or discussing information security?
-      I'd be happy to connect.
+      <br><br>
+
+      My areas of interest include penetration testing, vulnerability
+      assessment, security monitoring, information security, data privacy,
+      governance, risk and compliance (GRC), and network security.
+
+      <br><br>
+
+      I continuously develop my technical and analytical skills through
+      practical projects, cybersecurity labs and professional training.
     </p>
-    <p style="margin-top:15px;"><strong>Name:</strong> Favour Nwosu</p>
-    <p><strong>Location:</strong> Nigeria</p>
-    <p><strong>LinkedIn:</strong> Favour Nwosu</p>
-    <a class="btn" href="https://www.linkedin.com/" target="_blank" rel="noopener">Visit LinkedIn</a>
-    <a class="btn secondary" href="https://github.com/nwosufavour247-coder" target="_blank" rel="noopener">My GitHub</a>
-  </div>
-</section>
+  </section>
 
-<footer>
-  <p>© 2026 Favour Nwosu | Cybersecurity Portfolio</p>
-  <p>Securing today's digital world, one system at a time.</p>
-</footer>
+  <section class="section-dark" id="skills">
+    <h2>Core Skills</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Vulnerability Assessment</h3>
+        <p>Identifying security weaknesses and assessing potential risks in systems and applications.</p>
+      </div>
+
+      <div class="card">
+        <h3>Penetration Testing</h3>
+        <p>Understanding attack techniques and evaluating security controls in authorised testing environments.</p>
+      </div>
+
+      <div class="card">
+        <h3>Security Monitoring</h3>
+        <p>Monitoring endpoint and system activities to identify suspicious behaviour and potential threats.</p>
+      </div>
+
+      <div class="card">
+        <h3>Risk Management</h3>
+        <p>Identifying, evaluating and recommending measures to manage information security risks.</p>
+      </div>
+
+      <div class="card">
+        <h3>Data Protection</h3>
+        <p>Developing privacy and data protection policies that support responsible information handling.</p>
+      </div>
+
+      <div class="card">
+        <h3>GRC</h3>
+        <p>Governance, risk and compliance principles, including security policies and ISO 27001 concepts.</p>
+      </div>
+
+      <div class="card">
+        <h3>Incident Response</h3>
+        <p>Understanding incident detection, investigation, response and recovery processes.</p>
+      </div>
+
+      <div class="card">
+        <h3>Network Security</h3>
+        <p>Understanding network security controls, monitoring and vulnerability identification.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="tools">
+    <h2>Tools & Technologies</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Operating Systems</h3>
+        <p>Linux, Ubuntu, Kali Linux and Windows.</p>
+      </div>
+
+      <div class="card">
+        <h3>Security Monitoring & SIEM</h3>
+        <p>Wazuh, Splunk and Windows Event Viewer.</p>
+      </div>
+
+      <div class="card">
+        <h3>Network & Security Testing</h3>
+        <p>Zenmap, Nmap, OWASP ZAP, Burp Suite and Greenbone OpenVAS.</p>
+      </div>
+
+      <div class="card">
+        <h3>Other Tools</h3>
+        <p>Termux, Microsoft Excel and Google Workspace.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-dark" id="projects">
+    <h2>Practical Cybersecurity Projects</h2>
+
+    <p class="intro">
+      A selection of cybersecurity projects, assessments, policy
+      development activities and practical security exercises.
+    </p>
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>Knightlead Solutions Risk Assessment</h3>
+        <p>
+          Conducted a cybersecurity risk assessment project to identify
+          potential information security risks and recommend appropriate
+          controls for improving organisational security.
+        </p>
+        <span class="tag">Risk Assessment</span>
+        <span class="tag">Information Security</span>
+      </div>
+
+      <div class="card">
+        <h3>AbaCraft Vulnerability Assessment</h3>
+        <p>
+          Worked on a vulnerability assessment project focused on
+          identifying potential weaknesses and recommending security
+          improvements for a digital marketplace environment.
+        </p>
+        <span class="tag">Vulnerability Assessment</span>
+        <span class="tag">Application Security</span>
+      </div>
+
+      <div class="card">
+        <h3>Abia State GRC Framework Proposal</h3>
+        <p>
+          Developed a governance, risk and compliance framework proposal
+          aimed at strengthening information security practices and
+          supporting organisational risk management.
+        </p>
+        <span class="tag">GRC</span>
+        <span class="tag">Security Policies</span>
+      </div>
+
+      <div class="card">
+        <h3>Security Monitoring with Wazuh</h3>
+        <p>
+          Practised endpoint security monitoring and the investigation
+          of system events, indicators of compromise and suspicious
+          activities using Wazuh.
+        </p>
+        <span class="tag">Wazuh</span>
+        <span class="tag">Threat Detection</span>
+      </div>
+
+      <div class="card">
+        <h3>SIEM Monitoring with Splunk</h3>
+        <p>
+          Developed security searches for monitoring failed login
+          attempts, suspicious file access and user activity, with
+          alerting recommendations for potential security incidents.
+        </p>
+        <span class="tag">Splunk</span>
+        <span class="tag">SIEM</span>
+      </div>
+
+      <div class="card">
+        <h3>Abia State Web Application Hardening</h3>
+        <p>
+          Worked on a web application security hardening project
+          addressing vulnerabilities such as SQL injection, cross-site
+          scripting (XSS) and directory traversal. The proposed security
+          measures included input validation and sanitisation, web
+          application firewall configuration, prepared statements,
+          secure cookie settings and security testing.
+        </p>
+        <span class="tag">Application Security</span>
+        <span class="tag">Vulnerability Management</span>
+        <span class="tag">Web Security</span>
+      </div>
+
+      <div class="card">
+        <h3>ThriveAbia AbaCraft Data Protection Policy</h3>
+        <p>
+          Curated an Identity and Verification Data Protection Policy
+          for the ThriveAbia AbaCraft marketplace, with reference to
+          the Nigeria Data Protection Act (NDPA) 2023. The policy
+          addresses responsible personal data handling, identity
+          verification, access control, authentication, encryption,
+          audit logging and secure payment processes.
+        </p>
+        <span class="tag">Data Privacy</span>
+        <span class="tag">NDPA 2023</span>
+        <span class="tag">GRC</span>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Practical Experience</h2>
+
+    <p class="intro">
+      My practical experience includes cybersecurity projects,
+      security assessments, policy development and hands-on
+      technical learning.
+    </p>
+
+    <div class="grid">
+
+      <div class="card">
+        <p class="experience-label">PROJECT EXPERIENCE</p>
+        <h3>Web Application Security Hardening</h3>
+        <p><strong>Abia State Security Project</strong></p>
+        <p>
+          Worked on identifying web application security weaknesses
+          and developing hardening measures to address common
+          application vulnerabilities.
+        </p>
+      </div>
+
+      <div class="card">
+        <p class="experience-label">PROJECT EXPERIENCE</p>
+        <h3>Data Protection & GRC</h3>
+        <p><strong>ThriveAbia AbaCraft Project</strong></p>
+        <p>
+          Curated a data protection policy covering identity
+          verification, personal data protection, security controls
+          and compliance considerations.
+        </p>
+      </div>
+
+      <div class="card">
+        <p class="experience-label">PROJECT EXPERIENCE</p>
+        <h3>Cybersecurity Risk Assessment</h3>
+        <p><strong>Knightlead Solutions</strong></p>
+        <p>
+          Worked on identifying information security risks and
+          proposing controls to improve organisational security.
+        </p>
+      </div>
+
+      <div class="card">
+        <p class="experience-label">PRACTICAL LAB EXPERIENCE</p>
+        <h3>Security Monitoring & SIEM</h3>
+        <p><strong>Wazuh and Splunk Labs</strong></p>
+        <p>
+          Practised monitoring security events, investigating
+          suspicious activities and developing searches for
+          potential security threats.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section-dark" id="education">
+    <h2>Education & Certifications</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>Alex Ekwueme Federal University</h3>
+        <p>B.Sc. Criminology and Security Studies</p>
+      </div>
+
+      <div class="card">
+        <h3>QurateHQ</h3>
+        <p>Cybersecurity Training</p>
+      </div>
+
+      <div class="card">
+        <h3>Techeccentric</h3>
+        <p>Cybersecurity Training</p>
+      </div>
+
+      <div class="card">
+        <h3>Evolve Mentorship Academy</h3>
+        <p>Certified Leadership Training</p>
+      </div>
+
+      <div class="card">
+        <h3>Fled Organization</h3>
+        <p>Leadership Certificate</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Let's Connect</h2>
+
+    <p class="intro">
+      I am open to professional connections, cybersecurity
+      opportunities, collaborations and conversations around
+      information security.
+    </p>
+
+    <div class="contact-links">
+      <a href="https://github.com/nwosufavour247-coder" target="_blank" rel="noopener noreferrer">
+        GitHub Profile
+      </a>
+
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+        LinkedIn
+      </a>
+
+      <span>Umuahia, Abia State, Nigeria</span>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Favour Nwosu. All Rights Reserved.</p>
+    <p>Cybersecurity | Information Security | Risk Management</p>
+  </footer>
 
 </body>
 </html>
